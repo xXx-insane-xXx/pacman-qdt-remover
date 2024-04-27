@@ -10,3 +10,6 @@ script.py -c orphans.txt      # Writes a list of orphaned packages to orphans.tx
 script.py -r orphans.txt      # Removes all packages listed in orphans.txt without removing dependencies
 script.py --rd orphans.txt    # Removes all packages listed in orphans.txt along with their unneeded dependencies
 ```
+
+## Note
+Currently the code is in beta version, so it contains some security flaws, which will be eventually fixed.
