@@ -35,11 +35,12 @@ def delete_program(file_to_del, dep):
         if confirm.lower() == "y":
         
             if dep == True:
-                sp.run(f"sudo pacman -Rns {' '.join(programs)}", shell=True)    
+                # sp.run(f"sudo pacman -Rns {' '.join(programs)}", shell=True)
+                sp.run(["sudo", "pacman", "-Rns", " (' '.join(programs)) "])
                 print("Programs have been removed.")
             
             elif dep == False:
-                sp.run(f"sudo pacman -R {' '.join(programs)}", shell=True)    
+                sp.run(["sudo", "pacman", "-R", "(' '.join(programs))"])
                 print("Programs have been removed.")       
 
         else:
