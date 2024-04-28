@@ -1,3 +1,0 @@
-extra-cmake-modules 6.1.0-1
-python-importlib-metadata 5.1.0-2
-wayland-protocols 1.35-1
